@@ -1,0 +1,70 @@
+.section_contact{
+    background-color: var(--primary);
+}
+.footer{
+    background-color: var(--footer);
+}
+
+.espacio_contact{
+    margin: 3rem auto;
+    display: block;
+}
+.input_mail,.input_message{
+    border: none; 
+    box-shadow: none;
+    cursor: pointer;
+    resize: none;
+    font-size: 1.1rem;
+    width: 30rem;
+    height: auto;
+    padding: 0.5rem;
+ }
+
+
+ .input_message{
+    height: 10rem;
+ }
+
+ #Contact hr{
+    background-image: radial-gradient(circle , var(--white), transparent);
+ }
+ #Contact h3 {
+    color: var(--white);
+ }
+
+ #Contact button{
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    width: 8rem;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+ }
+
+ #Contact button:hover{
+    transform: scale(1.1);
+ }
+
+ #Contact a{
+    text-decoration: none;
+ }
+
+ #Contact img {
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    border: none;
+ }
+
+ #Contact img:hover{
+    transform: scale(1.2);
+    background-color: var(--secondary);
+ }
+
+
+

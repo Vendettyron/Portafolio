@@ -1,0 +1,45 @@
+
+.font_h1{
+    font-size: 50px;
+    display: block;
+    color: var(--white);
+    min-width: 100%;
+    text-align: center;
+}
+body{
+    display: block;
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.font_h2{
+    display: block;
+    color: var(--white);
+    margin-bottom: 100px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.font_subtitulos1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.font_footer{
+    color: var(--white);
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.font_txt_contact{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+
+
+

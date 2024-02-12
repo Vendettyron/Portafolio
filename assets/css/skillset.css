@@ -1,0 +1,71 @@
+
+.display_grid_skillset{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    background-color: var(--secondary);
+    padding: 5rem 0 5rem 0;
+    margin: 0;
+}
+
+.div_contenedor{
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.img_skillset{
+    display: block;
+    position: relative;
+    border-radius: 1.5rem;
+    max-width: 9rem;
+    min-width: 9rem;
+    z-index: 1;
+    cursor: pointer;
+    object-fit:contain;
+    margin: 1rem auto 0 auto;
+}
+
+.font_skillset{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    background-color: var(--skillset-box);
+    color: var(--white);
+    border-radius: 0.5rem;
+    font-size: 30px;
+    opacity: 0;
+    padding: 7px 2rem;
+    bottom: 12%;
+    z-index: 0;
+    margin: 0 auto 0 auto;
+    transition: opacity ease 0.3s , bottom ease 0.3s;
+    pointer-events: none;
+}
+
+.div_contenedor:hover .font_skillset{
+    opacity: 1;
+    bottom: 2%;
+}
+
+.flecha_adorno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 16%;
+    max-width: 1px;
+    margin: 0 auto 0 auto;
+    border-width: 15px;
+    border-style: solid;
+    z-index: 0;
+    border-color: transparent transparent var(--skillset-box) transparent;
+    transition: opacity ease 0.3s , bottom ease 0.3s;
+    opacity: 0;
+}
+.div_contenedor:hover .flecha_adorno{
+    opacity: 1;
+    bottom: 6%;
+}
