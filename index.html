@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
-   
+    <!-- COMENTAR esto al hacer npm run build tambien los scripts -->
+
+    <link rel="stylesheet" href="./assets/css/contac.css">
+    <link rel="stylesheet" href="./assets/css/expriencie.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
+    <link rel="stylesheet" href="./assets/css/skillset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/hamburguer.css">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+
+    <!-- HASTA AQUI -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-    </style>
+    </style> 
+    <style>
+        code {
+          display: inline-block;
+        }
+        code,
+        .hamburger {
+          vertical-align: middle;
+        }
+     </style>
 </head>
 <body>
     <header>
@@ -18,91 +42,97 @@
         <h2 class="font_h2">Sofware engineer</h2>
         <video autoplay loop muted src="./assets/video/hero.mp4" ></video>
     </header>
-    <nav id="navbar" class=""> <!-- Agregar "navbar_fixed"-->
-        <div>
-            <img  id="small_png" class="circle" src="./assets/img/logos/large.png" alt="" >
-            <a href="" class="hover_texto">Byron Coc Software Engineer</a>
-            <img  id="small_png2" class="circle" src="./assets/img/logos/Hamburger_icon.jpg" alt="">
-        </div>
-        <ul>
-            <li><a href="#portafolio">portafolio</a></li>
-            <li><a href="#skillset">Skillset</a></li>
-            <li><a href="#experience">Experiencie</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
 
+    <nav id="navbar" class=""> <!-- Agregar "navbar_fixed"-->
+                <div class="navbar_top">
+                <a href="#title"><img class="small_logo" src="./images/profile_pics/Premium Vector _ Floating laptop macbook illustration.jpg" alt="" ></a>
+                <a href="" class="hover_texto">Portafolio Byron Coc </a>
+                <div class="hamburger hamburger--slider-r" id="small_png2">
+                    <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                </div>
+                <ul>
+                        <li><a href="#quinesSomosSection">Opcion 1</a></li>
+                        <li><a href="#misionSection">Opcion 2</a></li>
+                        <li><a href="#visionSection">Opcion 3</a></li>
+                        <li><a href="#organigrama">Opcion 4</a></li>
+                        <li><a href="#Contact">Contacto</a></li>
+                </ul>
     </nav>
+
+
     <main style="margin-top: 0px;">
         <section id="portafolio">
-            <h3 class="font_subtitulos1">Portafolio</h3>
-            <hr>
-            <div>
-                <button class="button_portafolio">
-                    <img src="./assets/img/portfolio/xenoblade_1_logo.png" alt="" class="img_xenoblade_logo">
-                    <img src="./assets/img/portfolio/xenoblade_1.jpg" alt="" class="img_xenoblade">
-                    <h4 class="font_botones_portafolio">Xenoblade Chronicles</h4>
-                </button>
-                <button class="button_portafolio">
-                    <img src="./assets/img/portfolio/xenoblade_2_logo.png" alt="" class="img_xenoblade_logo">
-                    <img src="./assets/img/portfolio/xenoblade_2.jpg" alt="" class="img_xenoblade">
-                    <h4 class="font_botones_portafolio">Xenoblade Chronicles 2</h4>
-                </button>
-                <button class="button_portafolio">
-                    <img src="./assets/img/portfolio/xenoblade_3_logo.png" alt="" class="img_xenoblade_logo">
-                    <img src="./assets/img/portfolio/xenoblade-chronicles-3.jpg" alt="" class="img_xenoblade">
-                    <h4 class="font_botones_portafolio">Xenoblade Chronicles 3</h4>
-                </button>
-            </div>
+                    <h3 class="font_subtitulos1">Portafolio</h3>
+                    <hr>
+                    <div>
+                        <button class="button_portafolio">
+                            <img src="./assets/img/portfolio/xenoblade_1_logo.png" alt="" class="img_xenoblade_logo">
+                            <img src="./assets/img/portfolio/xenoblade_1.jpg" alt="" class="img_xenoblade">
+                            <h4 class="font_botones_portafolio">Xenoblade Chronicles</h4>
+                        </button>
+                        <button class="button_portafolio">
+                            <img src="./assets/img/portfolio/xenoblade_2_logo.png" alt="" class="img_xenoblade_logo">
+                            <img src="./assets/img/portfolio/xenoblade_2.jpg" alt="" class="img_xenoblade">
+                            <h4 class="font_botones_portafolio">Xenoblade Chronicles 2</h4>
+                        </button>
+                        <button class="button_portafolio">
+                            <img src="./assets/img/portfolio/xenoblade_3_logo.png" alt="" class="img_xenoblade_logo">
+                            <img src="./assets/img/portfolio/xenoblade-chronicles-3.jpg" alt="" class="img_xenoblade">
+                            <h4 class="font_botones_portafolio">Xenoblade Chronicles 3</h4>
+                        </button>
+                    </div>
         </section>
         <section id="Skillset" class="even">
-            <h3 class="font_subtitulos1">Skillset</h3>
-            <hr />
-            <div class="display_grid_skillset">
-
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
-                    <div class="flecha_adorno" ></div>
-                    <span class="font_skillset">bash</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">css</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">git</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">html</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">js</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">node</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">npm</span>
-                </div>
-                <div class="div_contenedor">
-                    <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
-                    <div class="flecha_adorno"></div>
-                    <span class="font_skillset">react</span>
-                </div>
-
+                    <h3 class="font_subtitulos1">Skillset</h3>
+                    <hr />
+             <div class="display_grid_skillset">
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
+                            <div class="flecha_adorno" ></div>
+                            <span class="font_skillset">bash</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">css</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">git</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">html</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">js</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">node</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset img_black_background">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">npm</span>
+                        </div>
+                        <div class="div_contenedor">
+                            <img src="./assets/img/skillset/html.svg" alt="" class="img_skillset">
+                            <div class="flecha_adorno"></div>
+                            <span class="font_skillset">react</span>
+                        </div>
             </div>
 
         </section>
+
         <section id="Experiencie">
             <h3 class="font_subtitulos1">Experiencie</h3>
             <hr>
@@ -134,6 +164,7 @@
                 </div>
             </div>
         </section>
+
         <section id="Contact" class="section_contact">
             <h3 class="font_subtitulos1">Contact</h3>
             <hr>
@@ -162,16 +193,32 @@
                 </a>
             </nav>
         </section>
-        <section>
-            <footer class="footer">
-                <h3 class="font_footer">Todos los derechos reservados</h3>      
-            </footer>
-        </section>
-    </main>
 
-    <!-- navbar -->
-    
-    <!-- Script eins model link: https://www.einscms.com/modal/#start -->
+     
+        <footer class="footerClass">
+                <h3 class="font_footer">Todos los derechos reservados</h3>      
+        </footer>
+       
+    </main>  
+
+    <!-- sript hamburguesa NO COMENTAR-->
+    <script >
+      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+      var hamburgers = document.querySelectorAll(".hamburger");
+      if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+          hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+          }, false);
+        });
+      }
+    </script>
+
+    <!-- COMENTAR ESTOS SCRIPTS AL HACER NPM RUN BUILD -->
+
+    <script src="./assets/js/navbar.js"></script>
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+
+    <!-- HASTA AQUI -->
 </body>
 </html>

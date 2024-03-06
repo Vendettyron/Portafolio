@@ -2,40 +2,24 @@
     text-decoration: none;
     box-shadow: 0px 0px 10px 1px var(--gray3);
     background-color: var(--primary);
-}
+    margin-bottom: 0px;
+    padding: 0px;
+  }
 
-#small_png2,
-#small_png{
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--white); 
-    margin-right: 1rem;
-    margin-left: 0.5rem;
-    margin-top: 2px;
-    padding: 3px 3px 3px 3px;
-    border-radius: 20%;
-    transition-duration: 0.4s;
-}
-
-#small_png2:hover{
-    background-color: var(--secondary);
-    transition-duration: 0.4s;
-    cursor:pointer;
-}
-
-#navbar div {
+.navbar_top {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    padding-top: 3px;
-    padding-bottom: 3px;
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--black); 
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 
 .hover_texto{
     text-decoration: none;
     color: black;
+    font-size: 25px;
     transition: max-height 0.4s ease;
     margin-top: 13px;
 }
@@ -44,6 +28,11 @@
     color: var(--white);
 }
 
+.small_logo{
+  width: 70px;
+  height: 55px;
+  left: 100px;
+}
 /**
 Abrir y cerrar navbar
 */
@@ -56,15 +45,16 @@ Abrir y cerrar navbar
 }
 
 #navbar.open ul{
-    max-height: 200px;
+    max-height: 250px;
 }
 
 /**
 Navbar decoracion naranja y animacion
+----------------------------------------------------------------------------------------
 */
 #navbar ul li{
     position:relative;
-    background: var(--primary);
+    background: var(--malibu-700);
     display: flex;
     transition-duration: 0.4s;
     padding-top: 1rem;
@@ -75,7 +65,7 @@ Navbar decoracion naranja y animacion
 }
 
 #navbar ul li:hover{
-    background-color: var(--secondary);
+    background-color: var(--malibu-950);
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -93,5 +83,6 @@ Navbar decoracion naranja y animacion
     top: 0;
     z-index: 100;
 }
+
 
 

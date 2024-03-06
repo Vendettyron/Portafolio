@@ -1,8 +1,9 @@
 .section_contact{
     background-color: var(--primary);
 }
-.footer{
+.footerClass{
     background-color: var(--footer);
+    bottom: 0px;
 }
 
 .espacio_contact{

@@ -1,11 +1,18 @@
 header{
-    padding: 5rem 0 3rem;
+    margin-top: 0px;
+    padding: 5rem 0 5rem;
     position: relative;
     overflow: hidden;
     background: linear-gradient(var(--black), var(--black));
     background-color: var(--primary-dark);
     align-items: center;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 header video {
     position: absolute;
